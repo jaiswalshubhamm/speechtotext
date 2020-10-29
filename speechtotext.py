@@ -96,7 +96,7 @@ root = tk.Tk()
 
 root.geometry("640x640")
 root.title("Language Translator")
-root.iconbitmap(r'icon.ico')
+root.iconbitmap(r'assets/icon.ico')
 root['bg'] = "#9fd3c7"
 root.minsize(540, 640) 
 
@@ -171,7 +171,7 @@ btn_search = tk.Button(frame4, image=search_btn, bg="#ffffff", borderwidth=1, co
 btn_search.grid(row=0, column=1, padx=10)
 
 # Speak Button
-speak_btn = PhotoImage(file='assets/speaka.png')
+speak_btn = PhotoImage(file='assets/speak.png')
 btn_speak = tk.Button(frame4, image=speak_btn, bg="#ffffff", command=speak)
 btn_speak.grid(row=1, column=1, padx=10)
 
