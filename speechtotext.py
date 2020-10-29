@@ -96,27 +96,30 @@ root = tk.Tk()
 
 root.geometry("640x640")
 root.title("Language Translator")
-root['bg'] = "#ffffff"
+root.iconbitmap(r'icon.ico')
+root['bg'] = "#9fd3c7"
 root.minsize(540, 640) 
 
+mainframe=Frame(bg="#ffffff")
+mainframe.pack( pady=10, padx=20)
 # Styling the frame which helps to make our background stylish
-frame1 = Frame(root, bg = "#ffffff", height=50, padx=10)
+frame1 = Frame(mainframe, bg = "#ffffff", height=50, padx=10)
 # Plcae the frame in GUI window
 frame1.pack()
 
 # Styling the label which show the text in our tkinter window
-label = Label(frame1, text = "Speech to Text", font = "bold, 30", bg = "#ffffff", fg="black")
+label = Label(frame1, text = "Speech to Text", font = "Times 30 italic", bg = "#ffffff", fg="#0058e8")
 # Plcae the label in GUI window
 label.grid(row=0, column=0)
 
-frame2 = Frame(root, bg = "#ffffff")
+frame2 = Frame(mainframe, bg = "#ffffff")
 frame2.pack(pady=5)
 
 frame2child = Frame(frame2, bg = "#ffffff")
 frame2child.grid(row=0, column=0, padx=10)
 
 # Lauguage Selection Label
-label = Label(frame2child, text = "Choose a Language", font = "bold, 20", bg = "#ffffff", fg="black")
+label = Label(frame2child, text = "Choose a Language", font = "helvetica 20 italic", bg = "#ffffff", fg="#0058e8")
 label.pack()
 
 # Hindi Button
@@ -149,13 +152,13 @@ labelmic = Label(frame2, bg="#ffffff", height=250, width=250)
 labelmic.grid(row=0, column=1)
 root.after(0, updatemic, 0)
 
-frame3 = Frame(root, bg = "#ffffff")
+frame3 = Frame(mainframe, bg = "#ffffff")
 frame3.pack()
 
-labeltext = Label(frame3, text = "Text", font = "bold, 30", bg = "#ffffff", fg="black")
+labeltext = Label(frame3, text = "Text", font = "Times 30 italic", bg = "#ffffff", fg="#0058e8")
 labeltext.grid(row=0, column=0)
 
-frame4 = Frame(root, bg = "#ffffff")
+frame4 = Frame(mainframe, bg = "#ffffff")
 frame4.pack()
 
 # Text Box
